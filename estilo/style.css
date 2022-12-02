@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+:root {
+    --fonte-destaque: 'Nerko One', cursive;
+    --fonte-principal: 'Patrick Hand', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 35px;
+}
+
+header h1 {
+    font-family: var(--fonte-destaque);
+    font-size: 4em;
+}
+
+header p {
+    font-family: var(--fonte-principal);
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+main {
+    max-width: 600px;
+    text-align: justify;
+    margin: auto;
+}
+
+main p {
+    font-family: var(--fonte-principal);
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-align: justify;
+    margin: 3px;
+}
+
+article {
+    margin: 30px 0px 30px 30px;
+}
+
+#cfg {
+    position: relative;
+    margin: 0px 0px 0px 30px;
+    top: -246px;
+    left: -30px;
+}
+
+.cfg02 {
+    top: 5px;
+    left: 5px;
+}
+
+.mal {
+    padding: 5px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.301);
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(1px, 44px);
+}
+
+.fundo01 {
+    margin: 10px 0px 0px 0px;
+    max-width: 800px;
+    min-height: 350px;
+    background-image: url("../d012/imagens/background001.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.fundo02 {
+    margin: 10px 0px 0px 0px;
+    max-width: 800px;
+    min-height: 350px;
+    background-image: url("../d012/imagens/background002.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+aside p {
+    width: 200px;
+    background-color: rgba(5, 5, 5, 0.267);
+}
+
+.movel {
+    margin: auto;
+    position: relative;
+    color: white;
+    background-size: 15px;
+    top: -316px;
+    left: 0px;
+}
+
+.movel > p {
+    margin: 0px;
+    padding: 5px;
+}
+
+.rule {
+    position: relative;
+    margin: auto;
+    top: -242px;
+    left: -3px;
+}
