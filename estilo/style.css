@@ -1,125 +1,85 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-
-:root {
-    --fonte-destaque: 'Nerko One', cursive;
-    --fonte-principal: 'Patrick Hand', cursive;
-}
-
 * {
     margin: 0px;
     padding: 0px;
 }
 
-body {
-    background-color: white;
+html, body {
+    min-height: 100vh;
+    background-color: dark;
 }
 
 header {
-    text-align: center;
+    color: white;
     background-color: black;
-    color: white;
-    padding: 35px;
+    text-align: center;
 }
 
-header h1 {
-    font-family: var(--fonte-destaque);
-    font-size: 4em;
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
 }
 
-header p {
-    font-family: var(--fonte-principal);
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1.2em;
+header > p {
+    padding-bottom: 50px;
 }
 
-main {
-    max-width: 600px;
-    text-align: justify;
-    margin: auto;
-}
-
-main p {
-    font-family: var(--fonte-principal);
-    font-size: 1.2em;
+header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
     font-weight: bolder;
-    text-align: justify;
-    margin: 3px;
 }
 
-article {
-    margin: 30px 0px 30px 30px;
+header a:hover {
+    transition-duration: 0.4s;
+    color: rgb(0, 26, 255);
+    border-radius: 10px;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+    padding: 4px;
+    text-decoration: underline rgb(255, 0, 0);
 }
 
-#cfg {
-    position: relative;
-    margin: 0px 0px 0px 30px;
-    top: -246px;
-    left: -30px;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
 }
 
-.cfg02 {
-    top: 5px;
-    left: 5px;
+.normal {
+    background-color: white;
+    color: black;
 }
 
-.mal {
-    padding: 5px;
-    width: 200px;
-    background-color: rgba(0, 0, 0, 0.301);
+.imagem {
+    background-color: rgb(87, 87, 87);
     color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(1px, 44px);
 }
 
-.fundo01 {
-    margin: 10px 0px 0px 0px;
-    max-width: 800px;
-    min-height: 350px;
-    background-image: url("../d012/imagens/background001.jpg");
-    background-position: bottom center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.377);
 }
 
-.fundo02 {
-    margin: 10px 0px 0px 0px;
-    max-width: 800px;
-    min-height: 350px;
-    background-image: url("../d012/imagens/background002.jpg");
-    background-position: bottom center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-aside p {
-    width: 200px;
-    background-color: rgba(5, 5, 5, 0.267);
-}
-
-.movel {
-    margin: auto;
-    position: relative;
+footer {
+    background-color: black;
+    text-align: center;
     color: white;
-    background-size: 15px;
-    top: -316px;
-    left: 0px;
+    padding: 10px;
 }
 
-.movel > p {
-    margin: 0px;
-    padding: 5px;
+footer a {
+    font-weight: bolder;
+    color: rgb(60, 88, 248);
+    text-decoration: none;
 }
 
-.rule {
-    position: relative;
-    margin: auto;
-    top: -242px;
-    left: -3px;
+footer a:hover {
+    color: rgb(255, 255, 255);
+    border-left: 3px solid rgb(60, 88, 248);
+    padding: 2.3px;
+    background-color: rgba(128, 128, 128, 0.473);
+    transition-duration: 0.2s;
 }
